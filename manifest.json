@@ -1,0 +1,31 @@
+{
+
+  "manifest_version": 2,
+  "name": "Kos-emoji",
+  "version": "1.0",
+
+  "description": "Changes the way grades are shown.",
+  "homepage_url": "https://github.com/AdamVerner/kos-emoji",
+
+  "icons": {
+    "48": "icons/kos48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.kos.cvut.cz/*"],
+      "js": ["kos-emoji.js"],
+      "css": ["style.css"]
+    }
+  ],
+
+  "web_accessible_resources": [
+    "media/A_vagner.png",
+    "media/B.png",
+    "media/C_guth.png",
+    "media/D_harold.png",
+    "media/E_vagner.png",
+    "media/F_noguth.png"
+  ]
+
+}
